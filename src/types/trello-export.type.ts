@@ -1,7 +1,7 @@
-import { WithIdAndName } from './with-id-and-name.type';
 import { TrelloLabel } from './trello-label.type';
 import { TrelloList } from './trello-list.type';
-
+import { TrelloMember } from './trello-member.type';
+import { WithIdAndName } from './with-id-and-name.type';
 
 /**
  * Represents the root of a Trello JSON export
@@ -15,8 +15,9 @@ import { TrelloList } from './trello-list.type';
 export interface TrelloExport extends WithIdAndName {
     closed: boolean;
     url: string;
-    labelNames: { [key: string]: string }
+    labelNames: { [key: string]: string };
     shortUrl: string;
     labels: TrelloLabel[];
     lists: TrelloList[];
+    members: TrelloMember[];
 }

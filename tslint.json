@@ -1,0 +1,31 @@
+{
+    "extends": [
+        "tslint-consistent-codestyle",
+        "tslint:recommended"
+    ],
+    "rules": {
+        "quotemark": [
+            true,
+            "single"
+        ],
+        "variable-name": false,
+        "interface-name": false,
+        "naming-convention": [
+            true,
+            {
+                "type": "member",
+                "format": "camelCase"
+            },
+            {
+                "type": "member",
+                "modifiers": "protected",
+                "leadingUnderscore": "require"
+            },
+            {
+                "type": "member",
+                "modifiers": "private",
+                "leadingUnderscore": "require"
+            }
+        ]
+    }
+}

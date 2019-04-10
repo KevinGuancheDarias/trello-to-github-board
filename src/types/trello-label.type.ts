@@ -1,6 +1,5 @@
 import { WithIdAndName } from './with-id-and-name.type';
 
-
 /**
  * Represents a Trello label description
  *
@@ -11,5 +10,5 @@ import { WithIdAndName } from './with-id-and-name.type';
  * @extends {WithIdAndName}
  */
 export interface TrelloLabel extends WithIdAndName {
-    color: string,
+    color: string;
 }

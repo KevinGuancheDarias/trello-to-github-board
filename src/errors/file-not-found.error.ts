@@ -9,7 +9,7 @@
  * @extends {Error}
  */
 export class FileNotFound extends Error {
-    public static fromFile(file: string) {
+    public static fromFile(file: string): FileNotFound {
         return new this(`File: ${file} not ofund. No such file or directory`);
     }
 }
