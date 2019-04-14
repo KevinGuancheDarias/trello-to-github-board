@@ -30,6 +30,15 @@ export interface ImportPreviewServer {
     stop(): Promise<void>;
 
     /**
+     * Returns a promise that solves when the user has confirmed the import
+     *
+     * @author Kevin Guanche Darias <kevin@kevinguanchedarias.com>
+     * @since 0.1.0
+     * @export
+     */
+    waitForConfirmation(): Promise<boolean>;
+
+    /**
      * Displays the result (for example in HTTP would open the user default web browser)
      *
      * @author Kevin Guanche Darias <kevin@kevinguanchedarias.com>

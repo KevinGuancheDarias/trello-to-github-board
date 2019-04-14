@@ -8,6 +8,7 @@
             true,
             "single"
         ],
+        "arrow-parens": false,
         "variable-name": false,
         "interface-name": false,
         "naming-convention": [

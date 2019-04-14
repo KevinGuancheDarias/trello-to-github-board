@@ -15,9 +15,16 @@ import { GithubImport } from '../types/github-import.type';
 export abstract class AbstractImportPreviewServer implements ImportPreviewServer {
     protected _data: GithubImport;
     private _eventsHandler: { [key: string]: Function } = {};
+    private _confirmationPromise: Promise<boolean>;
+    private _resolveFunction: (result: boolean) => void;
+
+    public constructor() {
+        this._createPromise();
+    }
 
     public abstract start(): Promise<void>;
     public abstract show(): void;
+
     /**
      * Defines the data to use
      *
@@ -58,6 +65,18 @@ export abstract class AbstractImportPreviewServer implements ImportPreviewServer
     }
 
     /**
+     * Returns a promise that solves when the user has confirmed the import
+     *
+     * @author Kevin Guanche Darias <kevin@kevinguanchedarias.com>
+     * @since 0.1.0
+     * @returns {Promise<boolean>}
+     * @memberof AbstractImportPreviewServer
+     */
+    public waitForConfirmation(): Promise<boolean> {
+        return this._confirmationPromise;
+    }
+
+    /**
      * Emits an event, and waits for handler to resolve
      *
      * @author Kevin Guanche Darias <kevin@kevinguanchedarias.com>
@@ -71,5 +90,22 @@ export abstract class AbstractImportPreviewServer implements ImportPreviewServer
         if (typeof this._eventsHandler[event] === 'function') {
             return await this._eventsHandler[event]();
         }
+    }
+
+    /**
+     * When invoked resolves the specified promise
+     *
+     * @author Kevin Guanche Darias <kevin@kevinguanchedarias.com>
+     * @protected
+     * @param {boolean} result
+     * @memberof AbstractImportPreviewServer
+     */
+    protected _resolveConfirmation(result: boolean): void {
+        this._resolveFunction(result);
+        this._createPromise();
+    }
+
+    private _createPromise(): void {
+        this._confirmationPromise = new Promise(resolve => this._resolveFunction = resolve);
     }
 }
