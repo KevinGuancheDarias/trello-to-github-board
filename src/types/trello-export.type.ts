@@ -1,3 +1,4 @@
+import { TrelloCard } from './trello-card.type';
 import { TrelloLabel } from './trello-label.type';
 import { TrelloList } from './trello-list.type';
 import { TrelloMember } from './trello-member.type';
@@ -20,4 +21,5 @@ export interface TrelloExport extends WithIdAndName {
     labels: TrelloLabel[];
     lists: TrelloList[];
     members: TrelloMember[];
+    cards: TrelloCard[];
 }
