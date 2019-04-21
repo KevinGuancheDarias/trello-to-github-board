@@ -16,6 +16,10 @@
         "arrow-parens": false,
         "variable-name": false,
         "interface-name": false,
+        "member-ordering": [
+            true,
+            "static-first"
+        ],
         "naming-convention": [
             true,
             {

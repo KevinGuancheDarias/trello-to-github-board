@@ -1,9 +1,22 @@
-import { blue, red } from 'colors';
+import { blue, green, red } from 'colors';
 import { Command } from 'commander';
 import { existsSync, readFileSync, writeFileSync } from 'fs';
 import { FileNotFound } from './errors/file-not-found.error';
-import { TrelloParserUtil } from './utils/trello-parser';
+import { GithubImport } from './types/github-import.type';
+import { GithubUploaderUtil } from './utils/github-uploader.util';
+import { TrelloParserUtil } from './utils/trello-parser.util';
 const program = new Command();
+
+const readingOptions = { encoding: 'utf-8' };
+
+process.on('unhandledRejection', (error: any) => {
+    if (error && error instanceof Error) {
+        console.error(red(`FATAL: Error of type ${error.constructor.name} occured, message: ${error.message}`));
+        console.log(error);
+    } else {
+        console.error(red(`Unknown unhandled error ${error}`));
+    }
+});
 
 // tslint:disable-next-line:no-var-requires
 program.version(require('../package').version, '-v --version');
@@ -26,9 +39,8 @@ program
             if (mapFile && !existsSync(mapFile)) {
                 throw FileNotFound.fromFile(mapFile);
             }
-            const readingOptions = { encoding: 'utf-8' };
             const mapFileData = JSON.parse(readFileSync(mapFile, readingOptions));
-            const importData = await TrelloParserUtil.parseJson(readFileSync(trelloFile, readingOptions), mapFileData);
+            const importData: GithubImport = await TrelloParserUtil.parseJson(readFileSync(trelloFile, readingOptions), mapFileData);
             console.log(blue(`Writing output to file ${outputFile}`));
             writeFileSync(outputFile, JSON.stringify(importData, null, 4));
         } catch (e) {
@@ -37,6 +49,17 @@ program
         }
     });
 
+program
+    .command('import <githubFile> <githubRepositoryUrl')
+    .action(async (githubFile: string, githubRepositoryUrl: string) => {
+        if (!existsSync(githubFile)) {
+            throw FileNotFound.fromFile((githubFile));
+        }
+        const fileData: GithubImport = JSON.parse(readFileSync(githubFile, readingOptions));
+        console.log(blue(`Uploading the issues to ${githubRepositoryUrl}`));
+        await GithubUploaderUtil.uploadIssues(fileData, githubRepositoryUrl);
+        console.log(green('Success!'));
+    });
 // error on unknown commands
 program.on('command:*', () => {
     console.error('Invalid command: %s\nSee --help for a list of available commands.', program.args.join(' '));

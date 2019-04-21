@@ -1,0 +1,262 @@
+{
+    "issues": [
+        {
+            "checkLists": [],
+            "labels": [],
+            "members": [],
+            "name": "As an admin I want to be able to create time specials"
+        },
+        {
+            "checkLists": [],
+            "labels": [],
+            "members": [],
+            "name": "As a player I would like to be able to use time specials"
+        },
+        {
+            "checkLists": [],
+            "labels": [],
+            "members": [],
+            "name": "As a player I would like to display the current upgrade in the game home page"
+        },
+        {
+            "checkLists": [],
+            "labels": [],
+            "members": [],
+            "name": "As a player I would like to have a missions limit"
+        },
+        {
+            "checkLists": [],
+            "labels": [],
+            "members": [],
+            "name": "As a player I would like to have a chance to capture enemy units"
+        },
+        {
+            "checkLists": [],
+            "labels": [],
+            "members": [],
+            "name": "As a player I want to be able to create a list of planets"
+        },
+        {
+            "checkLists": [],
+            "labels": [],
+            "members": [],
+            "name": "As a player I would like to to be able to send missions cross galaxies, when I have reached the required speed bonus"
+        },
+        {
+            "checkLists": [],
+            "labels": [],
+            "members": [],
+            "name": "As a player I want to be able to intercept a enemy mission with a \"speed bonus\" when I have a unit capable of doing so"
+        },
+        {
+            "checkLists": [],
+            "labels": [],
+            "members": [],
+            "name": "As a player I would like to have faction specials that can give me temporary units"
+        },
+        {
+            "checkLists": [],
+            "labels": [],
+            "members": [],
+            "name": "As a player I want to send invisible missions when using ONLY invisible units"
+        },
+        {
+            "checkLists": [],
+            "labels": [],
+            "members": [],
+            "name": "As a player I dont want to be able to send missions to planets outside my galaxy"
+        },
+        {
+            "checkLists": [],
+            "labels": [],
+            "members": [],
+            "name": "As a player, I would like to unlock race specials, units and upgrades when I conquest a special location"
+        },
+        {
+            "checkLists": [],
+            "labels": [],
+            "members": [],
+            "name": "As a player I want to be able to fast explore by using a single button in the planet"
+        },
+        {
+            "checkLists": [],
+            "labels": [],
+            "members": [],
+            "name": "As a player I want to be able to enter in vacation mode"
+        },
+        {
+            "checkLists": [],
+            "labels": [],
+            "members": [],
+            "name": "As a player I want to be able to choose all units to send to the mission, with a single button, or all of a certain type"
+        },
+        {
+            "checkLists": [],
+            "labels": [],
+            "members": [],
+            "name": "As a player I would like to see new features in the login screen (by connecting to Trello board)"
+        },
+        {
+            "checkLists": [],
+            "labels": [],
+            "members": [],
+            "name": "As a player I would like to be able to share my fight in the KGDW forums"
+        },
+        {
+            "checkLists": [],
+            "labels": [],
+            "members": [],
+            "name": "As an admin I want to be able to choose with type of unit can attack with type of unit"
+        },
+        {
+            "checkLists": [],
+            "labels": [],
+            "members": [],
+            "name": "As an admin I want to be able to add \"speed bonus\" to type of units"
+        },
+        {
+            "checkLists": [],
+            "labels": [],
+            "members": [],
+            "name": "As an admin i want to be able to define units that can intercept a mission that benefits from a \"speed bonus\""
+        },
+        {
+            "checkLists": [],
+            "labels": [],
+            "members": [],
+            "name": "As an admin I would like to configure a \"speed bonus\" that when disponible, would allow travelling cross galaxies"
+        },
+        {
+            "checkLists": [],
+            "labels": [],
+            "members": [],
+            "name": "As an admin I want to add invisible attribute to some units"
+        },
+        {
+            "checkLists": [],
+            "labels": [],
+            "members": [],
+            "name": "As a system owner, I would like to be able to deploy a universe, using an existing database"
+        },
+        {
+            "checkLists": [],
+            "labels": [],
+            "members": [],
+            "name": "As a player, I would like to see a summary of faction attributes, to be able to choosed the faction that better fits my gamestyle"
+        },
+        {
+            "checkLists": [],
+            "labels": [],
+            "members": [],
+            "name": "As a player I want to have a ranking with at least battle points"
+        },
+        {
+            "checkLists": [],
+            "labels": [],
+            "members": [],
+            "name": "As a player, I want to be able to create an alliance"
+        },
+        {
+            "checkLists": [],
+            "labels": [],
+            "members": [],
+            "name": "As a player I Want to be able to deploy my units to other planets"
+        },
+        {
+            "checkLists": [],
+            "labels": [],
+            "members": [],
+            "name": "As a player i don't want to be able to use selected types of units for missions, (for example Defenses, should only be allowed to use Deploy missions)"
+        },
+        {
+            "checkLists": [],
+            "labels": [],
+            "members": [],
+            "name": "As an admin I want to define what missions can do each type of unit"
+        },
+        {
+            "checkLists": [],
+            "labels": [],
+            "members": [],
+            "name": "As a player I want to have heroes"
+        },
+        {
+            "checkLists": [],
+            "labels": [],
+            "members": [],
+            "name": "As an admin I want to be able to add an improvement to increase unit build speed"
+        },
+        {
+            "checkLists": [],
+            "labels": [],
+            "members": [],
+            "name": "As an admin I wan to be able to add an improvement to upgrade research speed"
+        },
+        {
+            "checkLists": [],
+            "labels": [],
+            "members": [],
+            "name": "As an admin I want to be able to define an unit as unique"
+        },
+        {
+            "checkLists": [],
+            "labels": [],
+            "members": [],
+            "name": "As a player I want to have a limit on determinated types of units, for example in troops"
+        },
+        {
+            "checkLists": [],
+            "labels": [],
+            "members": [],
+            "name": "As an admin i want to add  unit type amount limit"
+        },
+        {
+            "checkLists": [],
+            "labels": [],
+            "members": [],
+            "name": "As a player I want energy to work like expected"
+        },
+        {
+            "checkLists": [],
+            "labels": [],
+            "members": [],
+            "name": "As a player I want to be able to deploy units in other of my planets"
+        },
+        {
+            "checkLists": [],
+            "labels": [],
+            "members": [],
+            "name": "As a player, i want to see the unit base attributes"
+        },
+        {
+            "checkLists": [],
+            "labels": [],
+            "members": [],
+            "name": "As a player I want to see the gather report"
+        },
+        {
+            "checkLists": [],
+            "labels": [],
+            "members": [],
+            "name": "As a player I want to be able to voluntary leave a planet"
+        },
+        {
+            "checkLists": [],
+            "labels": [],
+            "members": [],
+            "name": "As a player I would like to cancel my running unit missions"
+        },
+        {
+            "checkLists": [],
+            "labels": [],
+            "members": [],
+            "name": "As a pleyer, I would like to be able to delete my own units"
+        },
+        {
+            "checkLists": [],
+            "labels": [],
+            "members": [],
+            "name": "As a player I would like to see the requirements for the units of my race"
+        }
+    ]
+}

@@ -15,20 +15,24 @@
     "prepack": "npm run clear-bin && tsc && cp src/trello-to-git-board bin/",
     "lint": "tslint \"src/**/*.ts\"",
     "dev": "nodemon -e ts  --exec \"tsc && node ./bin/trello-to-git-board parse ./examples/input-trello.json -m ./examples/map.json\"",
+    "dev-import": "nodemon -e ts  --exec \"tsc && node ./bin/trello-to-git-board import ./examples/github-import.json https://github.com/KevinGuancheDarias/test-import",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Kevin Guanche Darias",
   "license": "MIT",
   "dependencies": {
+    "@octokit/rest": "^16.25.0",
     "commander": "^2.20.0",
     "mz": "^2.7.0",
     "ncp": "^2.0.0",
+    "readline-sync": "^1.4.9",
     "recursive-readdir": "^2.2.2"
   },
   "devDependencies": {
     "@types/mz": "0.0.32",
     "@types/ncp": "^2.0.1",
     "@types/node": "^11.13.6",
+    "@types/readline-sync": "^1.4.3",
     "@types/recursive-readdir": "^2.2.0",
     "del-cli": "^1.1.0",
     "nodemon": "^1.12.5",
@@ -36,6 +40,6 @@
     "tslib": "^1.8.1",
     "tslint": "^4.5.0",
     "tslint-consistent-codestyle": "^1.15.1",
-    "typescript": "^2.7.0"
+    "typescript": "^3.4.4"
   }
 }
