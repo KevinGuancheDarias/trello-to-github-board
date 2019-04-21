@@ -88,7 +88,7 @@ export abstract class AbstractImportPreviewServer implements ImportPreviewServer
      */
     protected async _emit(event: validEvents, data: any): Promise<any> {
         if (typeof this._eventsHandler[event] === 'function') {
-            return await this._eventsHandler[event]();
+            return await this._eventsHandler[event](data);
         }
     }
 
