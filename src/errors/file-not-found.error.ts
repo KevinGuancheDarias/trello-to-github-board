@@ -10,6 +10,6 @@
  */
 export class FileNotFound extends Error {
     public static fromFile(file: string): FileNotFound {
-        return new this(`File: ${file} not ofund. No such file or directory`);
+        return new this(`File: ${file} not found. No such file or directory`);
     }
 }

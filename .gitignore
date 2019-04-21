@@ -3,3 +3,4 @@ bin
 skel/*
 !skel/.gitkeep
 node_modules
+output.json
