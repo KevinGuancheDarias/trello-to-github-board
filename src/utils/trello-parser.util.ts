@@ -1,6 +1,7 @@
 import { GithubImport } from '../types/github-import.type';
 import { GithubIssue } from '../types/github-issue.type';
 import { TrelloExport } from '../types/trello-export.type';
+import { TrelloList } from '../types/trello-list.type';
 
 /**
  * Parses the input Trello JSON and returns a valid GithubImport object
@@ -23,8 +24,7 @@ export class TrelloParserUtil {
      * @returns {Promise<GithubImport>}
      * @memberof TrelloParserUtil
      */
-    public static async parseJson(trelloExportJson: string, _: any): Promise<GithubImport> {
-        const trelloExport: TrelloExport = JSON.parse(trelloExportJson);
+    public static async parseJson(trelloExport: TrelloExport, _: any): Promise<GithubImport> {
         return {
             issues: trelloExport.cards.map<GithubIssue>(card => {
                 return {
@@ -32,9 +32,25 @@ export class TrelloParserUtil {
                     labels: [],
                     members: [],
                     name: card.name,
+                    trelloCardId: card.id,
                 };
             }),
         };
+    }
+
+    /**
+     * Finds a Trello list by Id
+     *
+     * @author Kevin Guanche Darias <kevin@kevinguanchedarias.com>
+     * @since 0.1.0
+     * @static
+     * @param {TrelloExport} trelloExport
+     * @param {string} id
+     * @returns {TrelloList}
+     * @memberof TrelloParserUtil
+     */
+    public static findListById(trelloExport: TrelloExport, id: string): TrelloList {
+        return trelloExport.lists.find(list => list.id === id);
     }
 
     private constructor() { }

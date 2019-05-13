@@ -10,4 +10,5 @@
 export interface GithubChecklistItem {
     name: string;
     isCompleted: boolean;
+    trelloChecklistId?: string;
 }

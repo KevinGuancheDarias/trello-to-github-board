@@ -1,1 +1,23 @@
-{}
+{
+    "lists": [
+        {
+            "trello_id": "5b3ded46ba8c20cf69a13792",
+            "github_id": 5174834
+        },
+        {
+            "trello_name": "TODO",
+            "github_id": 5174835
+        },
+        {
+            "trello_name": "Doesn't exists hahahahahahahaha",
+            "github_id": 5174836
+        },
+        {
+            "trello_name": "Review",
+            "github_id": 5174836
+        }
+    ],
+    "notFoundList": {
+        "github_id": "5174836"
+    }
+}

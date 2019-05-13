@@ -17,4 +17,6 @@ export interface GithubUser {
      * @memberof GithubUser
      */
     exists?: boolean;
+
+    trelloUserId: string;
 }

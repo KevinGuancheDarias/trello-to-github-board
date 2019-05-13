@@ -8,14 +8,16 @@
   },
   "preferGlobal": true,
   "bin": {
-    "lollipop": "./bin/trello-to-git-board"
+    "trello-to-git-board": "./bin/trello-to-git-board"
   },
   "scripts": {
     "clear-bin": "del-cli bin",
     "prepack": "npm run clear-bin && tsc && cp src/trello-to-git-board bin/",
     "lint": "tslint \"src/**/*.ts\"",
-    "dev": "nodemon -e ts  --exec \"tsc && node ./bin/trello-to-git-board parse ./examples/input-trello.json -m ./examples/map.json\"",
-    "dev-import": "nodemon -e ts  --exec \"tsc && node ./bin/trello-to-git-board import ./examples/github-import.json https://github.com/KevinGuancheDarias/test-import",
+    "dev-parse": "nodemon -e ts  --exec \"tsc && node ./bin/trello-to-git-board parse ./examples/input-trello.json -m ./examples/map.json\"",
+    "dev-parse-create": "nodemon -e ts  --exec \"tsc && node ./bin/trello-to-git-board parse ./examples/input-trello.json -m ./examples/map-create.json\"",
+    "dev-import": "nodemon -e ts  --exec \"tsc && node ./bin/trello-to-git-board import ./examples/github-import.json https://github.com/KevinGuancheDarias/test-import/projects/1",
+    "dev-import-create": "nodemon -e ts  --exec \"tsc && node ./bin/trello-to-git-board import ./examples/github-import-create.json https://github.com/KevinGuancheDarias/test-import/projects/2",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Kevin Guanche Darias",
