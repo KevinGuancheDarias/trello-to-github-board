@@ -22,7 +22,7 @@ import { TrelloGithubMapperUtil } from './trello-github-mapper.util';
 export class GithubUploaderUtil {
 
     private static _octokit: Octokit;
-    private static _createdListStore: CreatedListStore;
+    private static _createdListStore: CreatedListStore<TrelloList>;
 
     /**
      * Uploads the issues to the target repository
@@ -49,6 +49,12 @@ export class GithubUploaderUtil {
                 title: current.name,
             });
             current.id = created.data.id.toString();
+            await this._octokit.issues.addLabels({
+                issue_number: created.data.number,
+                labels: current.labels,
+                owner,
+                repo,
+            });
         }));
         console.log(blue('Associating Github issues and Github board lists/columns'));
         await this._assocIssuesAndLists(githubImport, githubProject);

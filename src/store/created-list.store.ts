@@ -1,5 +1,4 @@
 import { ProgrammingError } from '../errors/programming.error';
-import { TrelloList } from '../types/trello-list.type';
 
 /**
  * Represents a Trello List to github id pair
@@ -8,8 +7,8 @@ import { TrelloList } from '../types/trello-list.type';
  * @since 0.1.0
  * @interface TrelloListStore
  */
-interface TrelloListStore {
-    trelloList: TrelloList;
+interface TrelloListStore<T extends { id: string }> {
+    trelloList: T;
     githubId: number | 'create';
 }
 
@@ -21,8 +20,8 @@ interface TrelloListStore {
  * @export
  * @class CreatedListStore
  */
-export class CreatedListStore {
-    private _map: Map<String, TrelloListStore> = new Map();
+export class CreatedListStore<T extends { id: string }> {
+    private _map: Map<String, TrelloListStore<T>> = new Map();
 
     /**
      * Checks if the given trelloId is in the list
@@ -55,12 +54,12 @@ export class CreatedListStore {
      *
      * @author Kevin Guanche Darias <kevin@kevinguanchedarias.com>
      * @since 0.1.0
-     * @param {TrelloList} trelloId
+     * @param {T} trelloId
      * @param {number} githubId
      * @param {boolean} [override=false] If specified will overwrite the existing mapping
      * @memberof CreatedListStore
      */
-    public addRelation(trelloList: TrelloList, githubId: number | 'create', override = false): void {
+    public addRelation(trelloList: T, githubId: number | 'create', override = false): void {
         if (!override && this._map.get(trelloList.id)) {
             throw new ProgrammingError(`A github list for ${trelloList.id} trello list already exists`);
         }
@@ -81,7 +80,7 @@ export class CreatedListStore {
      * @memberof CreatedListStore
      */
     public updateCreate(trelloId: string, githubId: number): void {
-        const value: TrelloListStore = this._map.get(trelloId);
+        const value: TrelloListStore<T> = this._map.get(trelloId);
         if (value.githubId === 'create') {
             value.githubId = githubId;
             this._map.set(trelloId, value);
@@ -101,7 +100,7 @@ export class CreatedListStore {
      * @returns {TrelloList}
      * @memberof CreatedListStore
      */
-    public findTrelloList(trelloId: string): TrelloList {
+    public findTrelloList(trelloId: string): T {
         return this._map.get(trelloId).trelloList;
     }
 

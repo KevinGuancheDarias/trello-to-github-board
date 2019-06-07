@@ -13,6 +13,10 @@ export interface TrelloGithubMap {
         trello_id?: string;
         trello_name?: string;
     }>;
+    labels: Array<{
+        github_id: number;
+        trello_name?: string;
+    }>;
     notFoundList: {
         github_id: number | 'create',
     };

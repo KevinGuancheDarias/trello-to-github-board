@@ -1,5 +1,11 @@
 {
     "notFoundList": {
         "github_id": "create"
-    }
+    },
+    "labels": [
+        {
+            "trello_name": "User Story",
+            "github_id": 1
+        }
+    ]
 }

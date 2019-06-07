@@ -7,6 +7,7 @@ import { GithubProject } from '../types/github-project.type';
 import { TrelloCard } from '../types/trello-card.type';
 import { TrelloExport } from '../types/trello-export.type';
 import { TrelloGithubMap } from '../types/trello-github-map.type';
+import { TrelloLabel } from '../types/trello-label.type';
 import { TrelloList } from '../types/trello-list.type';
 import { TrelloParserUtil } from './trello-parser.util';
 
@@ -20,7 +21,8 @@ import { TrelloParserUtil } from './trello-parser.util';
  */
 export class TrelloGithubMapperUtil {
     public static async applyMap(input: { trello: TrelloExport, github: GithubImport }, mapData: TrelloGithubMap): Promise<GithubImport> {
-        const map: CreatedListStore = new CreatedListStore();
+        const listsMap: CreatedListStore<TrelloList> = new CreatedListStore();
+        const labelsStore: CreatedListStore<TrelloLabel> = this._createLabelsMap(input.trello, mapData);
         input.github.trelloLists = input.github.trelloLists instanceof Array
             ? input.github.trelloLists
             : [];
@@ -32,9 +34,12 @@ export class TrelloGithubMapperUtil {
                     id: githubListId,
                     trelloListId: trelloCard.idList,
                 };
-                if (githubListId === 'create' && !map.exists(trelloCard.idList)) {
+                issue.labels = trelloCard.idLabels
+                    .map(current => labelsStore.exists(current) && labelsStore.findTrelloList(current).name)
+                    .filter(current => !!current);
+                if (githubListId === 'create' && !listsMap.exists(trelloCard.idList)) {
                     const trelloList: TrelloList = TrelloParserUtil.findListById(input.trello, issue.list.trelloListId);
-                    map.addRelation(trelloList, githubListId);
+                    listsMap.addRelation(trelloList, githubListId);
                     input.github.trelloLists.push(trelloList);
                 }
             }
@@ -90,6 +95,24 @@ export class TrelloGithubMapperUtil {
                 }
             }
         }
+    }
+
+    private static _createLabelsMap(trelloExport: TrelloExport, map: TrelloGithubMap): CreatedListStore<TrelloLabel> {
+        const store: CreatedListStore<TrelloLabel> = new CreatedListStore();
+        if (map.labels && map.labels instanceof Array) {
+            map.labels.forEach(current => {
+                const labelWithName = trelloExport.labels.find(label => label.name === current.trello_name);
+                if (!labelWithName) {
+                    console.warn(yellow(
+                        `No label with name ${current.trello_name} exists in the trello input file, please check your map file`,
+                    ));
+                } else {
+                    store.addRelation(labelWithName, current.github_id);
+                }
+
+            });
+        }
+        return store;
     }
 
     private constructor() {

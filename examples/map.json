@@ -19,5 +19,11 @@
     ],
     "notFoundList": {
         "github_id": "5174836"
-    }
+    },
+    "labels": [
+        {
+            "trello_name": "User Story",
+            "github_id": 1
+        }
+    ]
 }

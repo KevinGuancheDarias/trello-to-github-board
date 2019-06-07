@@ -2,433 +2,563 @@
     "issues": [
         {
             "checkLists": [],
-            "labels": [],
+            "labels": [
+                "User Story"
+            ],
             "members": [],
             "name": "As an admin I want to be able to create time specials",
             "trelloCardId": "5c23a665361514225ab1efa0",
             "list": {
-                "id": 5174834
+                "id": "5174836",
+                "trelloListId": "5b3ded46ba8c20cf69a13792"
             }
         },
         {
             "checkLists": [],
-            "labels": [],
+            "labels": [
+                "User Story"
+            ],
             "members": [],
             "name": "As a player I would like to be able to use time specials",
             "trelloCardId": "5c23a51d193f960f84d12324",
             "list": {
-                "id": 5174834
+                "id": "5174836",
+                "trelloListId": "5b3ded46ba8c20cf69a13792"
             }
         },
         {
             "checkLists": [],
-            "labels": [],
+            "labels": [
+                "User Story"
+            ],
             "members": [],
             "name": "As a player I would like to display the current upgrade in the game home page",
             "trelloCardId": "5c73fcfb113a3d72477907bc",
             "list": {
-                "id": 5174834
+                "id": "5174836",
+                "trelloListId": "5b3ded46ba8c20cf69a13792"
             }
         },
         {
             "checkLists": [],
-            "labels": [],
+            "labels": [
+                "User Story"
+            ],
             "members": [],
             "name": "As a player I would like to have a missions limit",
             "trelloCardId": "5c23a005c00f9407583baab2",
             "list": {
-                "id": 5174834
+                "id": "5174836",
+                "trelloListId": "5b3ded46ba8c20cf69a13792"
             }
         },
         {
             "checkLists": [],
-            "labels": [],
+            "labels": [
+                "User Story"
+            ],
             "members": [],
             "name": "As a player I would like to have a chance to capture enemy units",
             "trelloCardId": "5b3df3285c0806a7ae1cb389",
             "list": {
-                "id": 5174834
+                "id": "5174836",
+                "trelloListId": "5b3ded46ba8c20cf69a13792"
             }
         },
         {
             "checkLists": [],
-            "labels": [],
+            "labels": [
+                "User Story"
+            ],
             "members": [],
             "name": "As a player I want to be able to create a list of planets",
             "trelloCardId": "5b3df3cba29b91fae7dd74a7",
             "list": {
-                "id": 5174834
+                "id": "5174836",
+                "trelloListId": "5b3ded46ba8c20cf69a13792"
             }
         },
         {
             "checkLists": [],
-            "labels": [],
+            "labels": [
+                "User Story"
+            ],
             "members": [],
             "name": "As a player I would like to to be able to send missions cross galaxies, when I have reached the required speed bonus",
             "trelloCardId": "5b3f96b99699745e95bea5d4",
             "list": {
-                "id": 5174834
+                "id": "5174836",
+                "trelloListId": "5b3ded46ba8c20cf69a13792"
             }
         },
         {
             "checkLists": [],
-            "labels": [],
+            "labels": [
+                "User Story"
+            ],
             "members": [],
             "name": "As a player I want to be able to intercept a enemy mission with a \"speed bonus\" when I have a unit capable of doing so",
             "trelloCardId": "5b3df4f32614cc530b25aad8",
             "list": {
-                "id": 5174834
+                "id": "5174836",
+                "trelloListId": "5b3ded46ba8c20cf69a13792"
             }
         },
         {
             "checkLists": [],
-            "labels": [],
+            "labels": [
+                "User Story"
+            ],
             "members": [],
             "name": "As a player I would like to have faction specials that can give me temporary units",
             "trelloCardId": "5b3df59eaaaaa39ef3150725",
             "list": {
-                "id": 5174834
+                "id": "5174836",
+                "trelloListId": "5b3ded46ba8c20cf69a13792"
             }
         },
         {
             "checkLists": [],
-            "labels": [],
+            "labels": [
+                "User Story"
+            ],
             "members": [],
             "name": "As a player I want to send invisible missions when using ONLY invisible units",
             "trelloCardId": "5b3df6263707e07e8c0078a9",
             "list": {
-                "id": 5174834
+                "id": "5174836",
+                "trelloListId": "5b3ded46ba8c20cf69a13792"
             }
         },
         {
             "checkLists": [],
-            "labels": [],
+            "labels": [
+                "User Story"
+            ],
             "members": [],
             "name": "As a player I dont want to be able to send missions to planets outside my galaxy",
             "trelloCardId": "5b3e21313a44aeb23d70c118",
             "list": {
-                "id": 5174834
+                "id": "5174836",
+                "trelloListId": "5b3ded46ba8c20cf69a13792"
             }
         },
         {
             "checkLists": [],
-            "labels": [],
+            "labels": [
+                "User Story"
+            ],
             "members": [],
             "name": "As a player, I would like to unlock race specials, units and upgrades when I conquest a special location",
             "trelloCardId": "5b3f971f4f95a1de4dc99833",
             "list": {
-                "id": 5174834
+                "id": "5174836",
+                "trelloListId": "5b3ded46ba8c20cf69a13792"
             }
         },
         {
             "checkLists": [],
-            "labels": [],
+            "labels": [
+                "User Story"
+            ],
             "members": [],
             "name": "As a player I want to be able to fast explore by using a single button in the planet",
             "trelloCardId": "5b4f0abe7a6ce14e7d5711d8",
             "list": {
-                "id": 5174834
+                "id": "5174836",
+                "trelloListId": "5b3ded46ba8c20cf69a13792"
             }
         },
         {
             "checkLists": [],
-            "labels": [],
+            "labels": [
+                "User Story"
+            ],
             "members": [],
             "name": "As a player I want to be able to enter in vacation mode",
             "trelloCardId": "5b4f1d42a049b4ce286889ee",
             "list": {
-                "id": 5174834
+                "id": "5174836",
+                "trelloListId": "5b3ded46ba8c20cf69a13792"
             }
         },
         {
             "checkLists": [],
-            "labels": [],
+            "labels": [
+                "User Story"
+            ],
             "members": [],
             "name": "As a player I want to be able to choose all units to send to the mission, with a single button, or all of a certain type",
             "trelloCardId": "5b5099cfa1ca6ba31d944695",
             "list": {
-                "id": 5174834
+                "id": "5174836",
+                "trelloListId": "5b3ded46ba8c20cf69a13792"
             }
         },
         {
             "checkLists": [],
-            "labels": [],
+            "labels": [
+                "User Story"
+            ],
             "members": [],
             "name": "As a player I would like to see new features in the login screen (by connecting to Trello board)",
             "trelloCardId": "5c3f020e633c00279e38b7e5",
             "list": {
-                "id": 5174834
+                "id": "5174836",
+                "trelloListId": "5b3ded46ba8c20cf69a13792"
             }
         },
         {
             "checkLists": [],
-            "labels": [],
+            "labels": [
+                "User Story"
+            ],
             "members": [],
             "name": "As a player I would like to be able to share my fight in the KGDW forums",
             "trelloCardId": "5c76784e352efc01fb37f137",
             "list": {
-                "id": 5174834
+                "id": "5174836",
+                "trelloListId": "5b3ded46ba8c20cf69a13792"
             }
         },
         {
             "checkLists": [],
-            "labels": [],
+            "labels": [
+                "User Story"
+            ],
             "members": [],
             "name": "As an admin I want to be able to choose with type of unit can attack with type of unit",
             "trelloCardId": "5c23a5a296bf2440451f056e",
             "list": {
-                "id": 5174834
+                "id": "5174836",
+                "trelloListId": "5b3ded46ba8c20cf69a13792"
             }
         },
         {
             "checkLists": [],
-            "labels": [],
+            "labels": [
+                "User Story"
+            ],
             "members": [],
             "name": "As an admin I want to be able to add \"speed bonus\" to type of units",
             "trelloCardId": "5b3df09506d8c40d701fea89",
             "list": {
-                "id": 5174834
+                "id": "5174836",
+                "trelloListId": "5b3ded46ba8c20cf69a13792"
             }
         },
         {
             "checkLists": [],
-            "labels": [],
+            "labels": [
+                "User Story"
+            ],
             "members": [],
             "name": "As an admin i want to be able to define units that can intercept a mission that benefits from a \"speed bonus\"",
             "trelloCardId": "5b3df45c997883779617d1f9",
             "list": {
-                "id": 5174834
+                "id": "5174836",
+                "trelloListId": "5b3ded46ba8c20cf69a13792"
             }
         },
         {
             "checkLists": [],
-            "labels": [],
+            "labels": [
+                "User Story"
+            ],
             "members": [],
             "name": "As an admin I would like to configure a \"speed bonus\" that when disponible, would allow travelling cross galaxies",
             "trelloCardId": "5b3e21c3776946b5dd74e290",
             "list": {
-                "id": 5174834
+                "id": "5174836",
+                "trelloListId": "5b3ded46ba8c20cf69a13792"
             }
         },
         {
             "checkLists": [],
-            "labels": [],
+            "labels": [
+                "User Story"
+            ],
             "members": [],
             "name": "As an admin I want to add invisible attribute to some units",
             "trelloCardId": "5b3df5d7c1e33dd33ffafd6b",
             "list": {
-                "id": 5174834
+                "id": "5174836",
+                "trelloListId": "5b3ded46ba8c20cf69a13792"
             }
         },
         {
             "checkLists": [],
-            "labels": [],
+            "labels": [
+                "User Story"
+            ],
             "members": [],
             "name": "As a system owner, I would like to be able to deploy a universe, using an existing database",
             "trelloCardId": "5b3625618d19fd879220b590",
             "list": {
-                "id": 5174834
+                "id": "5174836",
+                "trelloListId": "5b3ded46ba8c20cf69a13792"
             }
         },
         {
             "checkLists": [],
-            "labels": [],
+            "labels": [
+                "User Story"
+            ],
             "members": [],
             "name": "As a player, I would like to see a summary of faction attributes, to be able to choosed the faction that better fits my gamestyle",
             "trelloCardId": "5b48906c11de0612c0c25a0d",
             "list": {
-                "id": 5174834
+                "id": "5174836",
+                "trelloListId": "5b3ded46ba8c20cf69a13792"
             }
         },
         {
             "checkLists": [],
-            "labels": [],
+            "labels": [
+                "User Story"
+            ],
             "members": [],
             "name": "As a player I want to have a ranking with at least battle points",
             "trelloCardId": "5c6d41656f85785d13ebf318",
             "list": {
-                "id": 5174836
+                "id": "5174836",
+                "trelloListId": "5b3ded46ba8c20cf69a13796"
             }
         },
         {
             "checkLists": [],
-            "labels": [],
+            "labels": [
+                "User Story"
+            ],
             "members": [],
             "name": "As a player, I want to be able to create an alliance",
             "trelloCardId": "5c2497548ff7943172f321a8",
             "list": {
-                "id": 5174836
+                "id": "5174836",
+                "trelloListId": "5b3ded46ba8c20cf69a13796"
             }
         },
         {
             "checkLists": [],
-            "labels": [],
+            "labels": [
+                "User Story"
+            ],
             "members": [],
             "name": "As a player I Want to be able to deploy my units to other planets",
             "trelloCardId": "5bb229f8fe1bb97de4db576e",
             "list": {
-                "id": 5174836
+                "id": "5174836",
+                "trelloListId": "5b3ded46ba8c20cf69a13796"
             }
         },
         {
             "checkLists": [],
-            "labels": [],
+            "labels": [
+                "User Story"
+            ],
             "members": [],
             "name": "As a player i don't want to be able to use selected types of units for missions, (for example Defenses, should only be allowed to use Deploy missions)",
             "trelloCardId": "5b97e2ab2530434972350b20",
             "list": {
-                "id": 5174836
+                "id": "5174836",
+                "trelloListId": "5b3ded46ba8c20cf69a13796"
             }
         },
         {
             "checkLists": [],
-            "labels": [],
+            "labels": [
+                "User Story"
+            ],
             "members": [],
             "name": "As an admin I want to define what missions can do each type of unit",
             "trelloCardId": "5b93ad428fb2ab6768332403",
             "list": {
-                "id": 5174836
+                "id": "5174836",
+                "trelloListId": "5b3ded46ba8c20cf69a13796"
             }
         },
         {
             "checkLists": [],
-            "labels": [],
+            "labels": [
+                "User Story"
+            ],
             "members": [],
             "name": "As a player I want to have heroes",
             "trelloCardId": "5b75a1fbf06462865dbdcd6d",
             "list": {
-                "id": 5174836
+                "id": "5174836",
+                "trelloListId": "5b3ded46ba8c20cf69a13796"
             }
         },
         {
             "checkLists": [],
-            "labels": [],
+            "labels": [
+                "User Story"
+            ],
             "members": [],
             "name": "As an admin I want to be able to add an improvement to increase unit build speed",
             "trelloCardId": "5b6ef50e5add156878b1c7e4",
             "list": {
-                "id": 5174836
+                "id": "5174836",
+                "trelloListId": "5b3ded46ba8c20cf69a13796"
             }
         },
         {
             "checkLists": [],
-            "labels": [],
+            "labels": [
+                "User Story"
+            ],
             "members": [],
             "name": "As an admin I wan to be able to add an improvement to upgrade research speed",
             "trelloCardId": "5b6eedaea713401548b9ee66",
             "list": {
-                "id": 5174836
+                "id": "5174836",
+                "trelloListId": "5b3ded46ba8c20cf69a13796"
             }
         },
         {
             "checkLists": [],
-            "labels": [],
+            "labels": [
+                "User Story"
+            ],
             "members": [],
             "name": "As an admin I want to be able to define an unit as unique",
             "trelloCardId": "5b6c979dc18db141932c0440",
             "list": {
-                "id": 5174836
+                "id": "5174836",
+                "trelloListId": "5b3ded46ba8c20cf69a13796"
             }
         },
         {
             "checkLists": [],
-            "labels": [],
+            "labels": [
+                "User Story"
+            ],
             "members": [],
             "name": "As a player I want to have a limit on determinated types of units, for example in troops",
             "trelloCardId": "5b61d6b27069e64bfd40368b",
             "list": {
-                "id": 5174836
+                "id": "5174836",
+                "trelloListId": "5b3ded46ba8c20cf69a13796"
             }
         },
         {
             "checkLists": [],
-            "labels": [],
+            "labels": [
+                "User Story"
+            ],
             "members": [],
             "name": "As an admin i want to add  unit type amount limit",
             "trelloCardId": "5b615e85c7568e4abc59ca5c",
             "list": {
-                "id": 5174836
+                "id": "5174836",
+                "trelloListId": "5b3ded46ba8c20cf69a13796"
             }
         },
         {
             "checkLists": [],
-            "labels": [],
+            "labels": [
+                "User Story"
+            ],
             "members": [],
             "name": "As a player I want energy to work like expected",
             "trelloCardId": "5b6052e6ff220ec710538626",
             "list": {
-                "id": 5174836
+                "id": "5174836",
+                "trelloListId": "5b3ded46ba8c20cf69a13796"
             }
         },
         {
             "checkLists": [],
-            "labels": [],
+            "labels": [
+                "User Story"
+            ],
             "members": [],
             "name": "As a player I want to be able to deploy units in other of my planets",
             "trelloCardId": "5b6037c700b89e15a78ab419",
             "list": {
-                "id": 5174836
+                "id": "5174836",
+                "trelloListId": "5b3ded46ba8c20cf69a13796"
             }
         },
         {
             "checkLists": [],
-            "labels": [],
+            "labels": [
+                "User Story"
+            ],
             "members": [],
             "name": "As a player, i want to see the unit base attributes",
             "trelloCardId": "5b5f33f39b306aabf9e21211",
             "list": {
-                "id": 5174836
+                "id": "5174836",
+                "trelloListId": "5b3ded46ba8c20cf69a13796"
             }
         },
         {
             "checkLists": [],
-            "labels": [],
+            "labels": [
+                "User Story"
+            ],
             "members": [],
             "name": "As a player I want to see the gather report",
             "trelloCardId": "5b59b00f639d2cca218a7af7",
             "list": {
-                "id": 5174836
+                "id": "5174836",
+                "trelloListId": "5b3ded46ba8c20cf69a13796"
             }
         },
         {
             "checkLists": [],
-            "labels": [],
+            "labels": [
+                "User Story"
+            ],
             "members": [],
             "name": "As a player I want to be able to voluntary leave a planet",
             "trelloCardId": "5b58755af300a89a3f6441fe",
             "list": {
-                "id": 5174836
+                "id": "5174836",
+                "trelloListId": "5b3ded46ba8c20cf69a13798"
             }
         },
         {
             "checkLists": [],
-            "labels": [],
+            "labels": [
+                "User Story"
+            ],
             "members": [],
             "name": "As a player I would like to cancel my running unit missions",
             "trelloCardId": "5b4f0caa75b26e086559531c",
             "list": {
-                "id": 5174836
+                "id": "5174836",
+                "trelloListId": "5b3ded46ba8c20cf69a13798"
             }
         },
         {
             "checkLists": [],
-            "labels": [],
+            "labels": [
+                "User Story"
+            ],
             "members": [],
             "name": "As a pleyer, I would like to be able to delete my own units",
             "trelloCardId": "5b4ce4a48f501f260712c9b0",
             "list": {
-                "id": 5174836
+                "id": "5174836",
+                "trelloListId": "5b3ded46ba8c20cf69a13798"
             }
         },
         {
             "checkLists": [],
-            "labels": [],
+            "labels": [
+                "User Story"
+            ],
             "members": [],
             "name": "As a player I would like to see the requirements for the units of my race",
             "trelloCardId": "5b3ded5d0b524b319dd4b896",
             "list": {
-                "id": 5174836
+                "id": "5174836",
+                "trelloListId": "5b3ded46ba8c20cf69a13798"
             }
         }
-    ]
+    ],
+    "trelloLists": []
 }
