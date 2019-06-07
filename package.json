@@ -1,7 +1,7 @@
 {
   "name": "trello-to-github-board",
   "version": "0.1.0",
-  "description": "Lollipop framework CLI",
+  "description": "Trello To Github Board",
   "repository": {
     "type": "git",
     "url": "https://github.com/KevinGuancheDarias/ts-lollipop.git"
